@@ -1,0 +1,18 @@
+GUI METHOD
+1. To check version of your current kernel
+uname -sr
+My was Linux 4.04.0-42-generic
+2. To download debian file for latest kernel
+ http://kernel.ubuntu.com/~kernel-ppa
+ 3.Install using
+ $ sudo dpkg -i *.deb
+ 
+ And that’s it. You are now using a much more recent kernel version than the one installed by default with Ubuntu.
+ 
+CUI METHOD
+In your terminal type
+
+sudo apt-get update
+apt-cache search linux-image
+
+Then type sudo apt-get install linux-image-<latest version>
