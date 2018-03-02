@@ -1,0 +1,4 @@
+My ubuntu 17.04 was not shutting down using GUI ,but rather it used to log out 
+and I needed to again shutdown using same option in GUI. So I found a command as its solution
+
+shutdown -h now //h for halt also
