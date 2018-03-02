@@ -1,0 +1,9 @@
+Difference between Halt and shutdown
+
+    halt instructs the hardware to stop all CPU functions, but leaves it in a powered-on state. This usually means someone has 
+    to reboot or shut the machine down manually by pressing the power button afterwards. The specific way to achieve this is
+    architecture specific, but for instance the x86 instruction set provides the HLT instructions which halts the central
+    processing unit (CPU) until the next external interrupt is fired.
+
+    poweroff, like halt, stops the CPU but also sends an ACPI hardware signal which will instruct the system to commence with
+    a complete and immediate shutdown. This is roughly equivalent to pressing the power button on a typical desktop computer.
